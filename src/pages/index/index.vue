@@ -1,6 +1,7 @@
 <template>
   <div class="container" >
    <!--  选中效果 -->
+   <!-- 尝试pull request-->
   <div class="select-bg" v-if="selectStatus" @tap="selectMenu">
     <div class="select-menu">
       <a v-for="(item,index) in menus" :key="index" @click.stop="choose" :data-menu="item.menu">{{item.name}}</a>
